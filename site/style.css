@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    background-color: #F0F0F0;
+    font-family: "Eastman Grotesque Alt Regular";
+    font-weight: normal;
+    font-style: normal;
+    animation: PageTransition 0.75s;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@keyframes PageTransition {
+    from {
+        opacity: 0;
+        transform: translateX(-10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@import url(https://webfonts.fontstand.com/WF-084748-abea84abb4dcd8075f46a9d4cbbc4d88.css);
+@import url(https://use.typekit.net/ehj8gbe.css);
+
+@font-face {
+    font-family: "capitolium light";
+    src: url("https://use.typekit.net/ehj8gbe.css") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title {
+    font-size: 3em;
+    color: black;
+    font-style: normal;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: "CapitoliumHead 2 W03 SemiBold";
+}
+
+.titledetail {
+    font-size: 4em;
+    color: black;
+    font-style: normal;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: "capitolium-2", serif;
+    font-style: italic;
+}
+
+.fontname1 {
+    font-family: "capitolium-2", serif;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.fontname2 {
+    font-family: "capitolium-2", serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: right;
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+    top: 40%;
+    height: auto;
+    overflow: hidden;
+}
+
+.scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+}
+
+.scroll div {
+    display: flex;
+}
+
+
+
+.slide1 {
+    font-size: 3em;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 10px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    transition: 3s;
+    font-family: "capitolium-2", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.slide2 {
+    font-size: 3em;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 10px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    transition: 3s;
+    font-family: "capitolium-2", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.slide3 {
+    font-size: 3em;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 10px;
+
+    padding-bottom: 45px;
+    padding-top: 45px;
+    transition: 3s;
+    font-family: "capitolium-2", serif;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+
+}
+
+.slide4 {
+    font-size: 3em;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 40px;
+    line-height: 10px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    transition: 3s;
+    font-family: "capitolium-2", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.slide1:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #F0F0F0;
+    transition: .3s;
+}
+
+.slide2:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #F0F0F0;
+    transition: .3s;
+}
+
+.slide3:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #F0F0F0;
+    transition: .3s;
+}
+
+.slide4:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #F0F0F0;
+    transition: .3s;
+}
+
+
+
+.RightToLeft {
+    animation: RightToLeft 25s infinite linear;
+}
+
+@keyframes RightToLeft {
+    from {
+        transform: translateX(-1%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.LeftToRight {
+    animation: LeftToRight 25s infinite linear;
+}
+
+@keyframes LeftToRight {
+    from {
+        transform: translateX(-41%);
+    }
+
+    to {
+        transform: translateX(1%);
+    }
+}
+
+.LeftToRightFast {
+    animation: LeftToRightFast 20s infinite linear;
+}
+
+@keyframes LeftToRightFast {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(1%);
+    }
+}
+
+.RightToLeftFast {
+    animation: RightToLeftFast 15s infinite linear;
+}
+
+@keyframes RightToLeftFast {
+    from {
+        transform: translateX(-1%);
+    }
+
+    to {
+        transform: translateX(-25%);
+    }
+}
+
+.info1 {
+    max-width: 27em;
+    height: 18em;
+    font-size: 0.8em;
+    font-family: "capitolium-2", serif;
+}
+
+
+.info1:first-letter {
+    font-family: "capitolium-2", serif;
+    float: left;
+    font-size: 3rem;
+    line-height: 0.4;
+    margin: 0.1em 0.1em 0.1em 0;
+}
+
+
+.gerard {
+    max-width: 25em;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.bord {
+    max-width: 26em;
+    position: absolute;
+    right: 900px;
+    top: 990px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 1fr 2fr;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.grid p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    color: black;
+    font-style: normal;
+    font-family: "capitolium-2", serif;
+    margin: 20px;
+    font-weight: 400;
+    font-style: italic;
+    border: 1px solid black;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 9px;
+}
+
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: absolute;
+    left: 40px;
+    top: 50px;
+}
+
+.bron {
+    font-size: 0.5em;
+    color: black;
+    font-style: normal;
+    font-family: "capitolium-2", serif;
+    line-height: 0.4pt;
+}
+
+.responsive {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    max-height: 100%;
+    width: 100%;
+}
+
+
+@media (min-width: 1200px) {
+    .responsive {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 50px;
+    }
+
+    .fontname2 {
+        width: 95vw;
+    }
+    .gerard {
+        padding-top: 40px;
+    }
+
+}
+
+@media (min-width: 620px) {
+    .info1 {
+        max-width: 27em;
+        height: 18em;
+        font-size: 1.1em;
+        font-family: "capitolium-2", serif;
+    }
+
+    .title {
+        font-size: 4em;
+        padding-bottom: 30px;
+    }
+
+    .gerard {
+        max-width: 33em;
+    }
+
+    .info1:first-letter {
+        font-size: 6rem;
+    }
+}
