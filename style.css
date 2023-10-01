@@ -5,6 +5,7 @@ body {
     font-weight: normal;
     font-style: normal;
     animation: PageTransition 0.75s;
+    position: relative;
 }
 
 a {
@@ -46,11 +47,11 @@ a {
 }
 
 .titledetail {
-    font-size: 4em;
+    font-size: 3em;
     color: black;
     font-style: normal;
     padding-bottom: 30px;
-    padding-top: 50px;
+    padding-top: 80px;
     margin-bottom: 0;
     margin-top: 0;
     text-align: center;
@@ -274,7 +275,7 @@ a {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-content: center;
     margin-left: 10%;
@@ -306,18 +307,33 @@ a {
     border: solid black;
     border-width: 0 4px 4px 0;
     display: inline-block;
-    padding: 9px;
-    
-}
-
-
-.left {
+    padding: 10px 10px;
+    margin: 10px 10px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     position: absolute;
     left: 60px;
     top: 50px;
 }
+
+#arrow2 {
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    display: none;
+}
+
+#arrow2:hover {
+    cursor: pointer;
+}
+
 
 .bron {
     font-size: 0.5em;
@@ -334,6 +350,54 @@ a {
     place-items: center;
     max-height: 100%;
     width: 100%;
+}
+
+#bigletter {
+    font-size: 25em;
+    z-index: 1000;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "capitolium-2", serif;
+    font-style: italic;
+    display: none;
+}
+
+@media (min-width: 620px) {
+    .info1 {
+        max-width: 27em;
+        height: 18em;
+        font-size: 1.1em;
+        font-family: "capitolium-2", serif;
+    }
+
+    .title {
+        font-size: 4em;
+        padding-bottom: 30px;
+    }
+
+    .gerard {
+        max-width: 33em;
+    }
+
+    .info1:first-letter {
+        font-size: 6rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .titledetail {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 780px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
 
@@ -357,30 +421,47 @@ a {
         font-size: 1.1em;
         margin: 0;
     }
+
     .fontname2 {
         font-size: 1.1em;
         margin: 0
     }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
-@media (min-width: 620px) {
-    .info1 {
-        max-width: 27em;
-        height: 18em;
-        font-size: 1.1em;
-        font-family: "capitolium-2", serif;
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
+}
 
-    .title {
-        font-size: 4em;
-        padding-bottom: 30px;
+@media (min-width: 670px) {
+    .titledetail {
+        padding-top: 50px;
     }
+    #bigletter {
+        font-size: 35em;
+    }
+}
 
-    .gerard {
-        max-width: 33em;
-    }
 
-    .info1:first-letter {
-        font-size: 6rem;
-    }
+
+
+
+#popup {
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    width: 0vw;
+    height: 100vh;
+    background-color: #F0F0F0;
+    top: 0px;
+    left: 0px;
+    transition: 0.7s;
+    display: hidden;
 }
