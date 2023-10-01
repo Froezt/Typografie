@@ -44,6 +44,8 @@ a {
     margin-top: 0;
     text-align: center;
     font-family: "CapitoliumHead 2 W03 SemiBold";
+    margin-right: 23px;
+    margin-left: 23px;
 }
 
 .titledetail {
@@ -310,8 +312,8 @@ a {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     position: absolute;
-    left: 60px;
-    top: 50px;
+    left: 30px;
+    top: 25px;
 }
 
 #arrow2 {
@@ -323,8 +325,8 @@ a {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     position: absolute;
-    left: 60px;
-    top: 50px;
+    left: 30px;
+    top: 25px;
     display: none;
 }
 
@@ -351,13 +353,14 @@ a {
 }
 
 #bigletter {
-    font-size: 25em;
+    font-size: 18em;
     z-index: 1000;
     margin-top: auto;
     margin-bottom: auto;
     font-family: "capitolium-2", serif;
     font-style: italic;
     display: none;
+    margin-top: 20vh
 }
 
 @media (min-width: 620px) {
@@ -388,6 +391,10 @@ a {
 
     .titledetail {
         font-size: 4em;
+    }
+    .arrow {
+        left: 60px;
+        top: 50px;
     }
 }
 
