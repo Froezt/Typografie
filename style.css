@@ -278,8 +278,6 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .grid p {
@@ -437,6 +435,8 @@ a {
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
@@ -444,6 +444,7 @@ a {
     .titledetail {
         padding-top: 50px;
     }
+
     #bigletter {
         font-size: 35em;
     }
