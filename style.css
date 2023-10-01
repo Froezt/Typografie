@@ -35,7 +35,7 @@ a {
 }
 
 .title {
-    font-size: 3em;
+    font-size: 2.5em;
     color: black;
     font-style: normal;
     padding-bottom: 10px;
@@ -61,14 +61,14 @@ a {
 .fontname1 {
     font-family: "capitolium-2", serif;
     margin: 0;
-    margin-left: 10px;
-    font-size: 1.1em;
+    padding: 0;
+    font-size: 0.8em;
     font-weight: 400;
 }
 
 .fontname2 {
     font-family: "capitolium-2", serif;
-    font-size: 1.1em;
+    font-size: 0.8em;
     font-weight: 400;
     text-align: right;
     width: 90vw;
@@ -258,7 +258,7 @@ a {
 
 
 .gerard {
-    max-width: 25em;
+    max-width: 23em;
     padding-top: 60px;
     display: flex;
     align-items: center;
@@ -275,7 +275,7 @@ a {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     align-content: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -292,7 +292,14 @@ a {
     margin: 20px;
     font-weight: 400;
     font-style: italic;
-    border: 1px solid black;
+    transition: .4s;
+}
+
+.grid p:hover {
+    background-color: black;
+    color: #F0F0F0;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .arrow {
@@ -300,6 +307,7 @@ a {
     border-width: 0 4px 4px 0;
     display: inline-block;
     padding: 9px;
+    
 }
 
 
@@ -307,7 +315,7 @@ a {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     position: absolute;
-    left: 40px;
+    left: 60px;
     top: 50px;
 }
 
@@ -333,16 +341,26 @@ a {
     .responsive {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
+        margin-top: 30px;
     }
 
     .fontname2 {
         width: 95vw;
     }
+
     .gerard {
         padding-top: 40px;
     }
 
+    .fontname1 {
+        font-size: 1.1em;
+        margin: 0;
+    }
+    .fontname2 {
+        font-size: 1.1em;
+        margin: 0
+    }
 }
 
 @media (min-width: 620px) {
