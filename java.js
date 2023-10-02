@@ -1,4 +1,8 @@
 var grid = document.getElementsByClassName("grid")[0];
+var path = window.location.pathname;
+var page = path.split("/").pop();
+console.log( page );
+
 
 function LetterA() {
     document.getElementById("popup").style.display = "block";
@@ -6,6 +10,25 @@ function LetterA() {
     document.querySelector('body').style.overflow = "hidden";
     document.getElementById("arrow2").style.display = "block";
     document.getElementById("bigletter").style.display = "block";
+    if (page == "detailpage.html"){
+        document.getElementById("bigletter").style.fontStyle = "italic";
+    }
+    if (page == "detailpage2.html"){
+        document.getElementById("bigletter").style.fontWeight = "300";
+        document.getElementById("bigletter").style.fontStyle = "regular";
+    }
+    if (page == "detailpage3.html"){
+        document.getElementById("bigletter").style.fontWeight = "700";
+        document.getElementById("bigletter").style.fontStyle = "italic";
+    }
+    if (page == "detailpage4.html"){
+        document.getElementById("bigletter").style.fontStyle = "normal";
+        document.getElementById("bigletter").style.fontWeight = "400";
+    }
+    if (page == "detailpage5.html"){
+        document.getElementById("bigletter").style.fontStyle = "normal";
+        document.getElementById("bigletter").style.fontWeight = "700";
+    }
     setTimeout(()=> {
          document.getElementById("bigletter").innerHTML = "Aa";
       }
@@ -150,6 +173,9 @@ function LetterM() {
     document.querySelector('body').style.overflow = "hidden";
     document.getElementById("arrow2").style.display = "block";
     document.getElementById("bigletter").style.display = "block";
+    if (window.screen.width <= 600) {
+        document.getElementById("bigletter").style.fontSize = "14em";
+    }
     setTimeout(()=> {
          document.getElementById("bigletter").innerHTML = "Mm";
       }
@@ -270,6 +296,9 @@ function LetterW() {
     document.querySelector('body').style.overflow = "hidden";
     document.getElementById("arrow2").style.display = "block";
     document.getElementById("bigletter").style.display = "block";
+    if (window.screen.width <= 600) {
+        document.getElementById("bigletter").style.fontSize = "14em";
+    }
     setTimeout(()=> {
          document.getElementById("bigletter").innerHTML = "Ww";
       }
@@ -312,6 +341,259 @@ function LetterZ() {
       ,150);
 }
 
+function Letter1() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "1";
+      }
+      ,150);
+}
+
+function Letter2() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "2";
+      }
+      ,150);
+}
+
+function Letter3() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "3";
+      }
+      ,150);
+}
+
+function Letter4() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "4";
+      }
+      ,150);
+}
+
+function Letter5() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "5";
+      }
+      ,150);
+}
+
+function Letter6() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "6";
+      }
+      ,150);
+}
+
+function Letter7() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "7";
+      }
+      ,150);
+}
+
+function Letter8() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "8";
+      }
+      ,150);
+}
+
+function Letter9() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "9";
+      }
+      ,150);
+}
+
+function Letter0() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "0";
+      }
+      ,150);
+}
+
+function LetterUitroep() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "!";
+      }
+      ,150);
+}
+
+function LetterVraag() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "?";
+      }
+      ,150);
+}
+
+function LetterAt() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "@";
+      }
+      ,150);
+}
+
+function LetterHash() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "#";
+      }
+      ,150);
+}
+
+function Letter$() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "$";
+      }
+      ,150);
+}
+
+function LetterProcent() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "%";
+      }
+      ,150);
+}
+
+
+function LetterUp() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "^";
+      }
+      ,150);
+}
+
+function LetterEn() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "&";
+      }
+      ,150);
+}
+
+function LetterSter() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "*";
+      }
+      ,150);
+}
+
+function LetterOpen() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = "(";
+      }
+      ,150);
+}
+
+function LetterDicht() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.width = "100vw";
+    document.querySelector('body').style.overflow = "hidden";
+    document.getElementById("arrow2").style.display = "block";
+    document.getElementById("bigletter").style.display = "block";
+    setTimeout(()=> {
+         document.getElementById("bigletter").innerHTML = ")";
+      }
+      ,150);
+}
+
 
 function noPopup() {
     document.getElementById("bigletter").style.display = "none";
@@ -320,10 +602,10 @@ function noPopup() {
     document.getElementById("arrow2").style.display = "none";
     document.getElementById("bigletter").innerHTML = "";
     document.querySelector('body').style.overflow = "visible";
+    if (document.getElementById("bigletter").style.fontSize == "14em") {
+        document.getElementById("bigletter").style.fontSize = "35em";
+    }
 }
 
 
 
-
-console.log(letter)
-console.log(grid)

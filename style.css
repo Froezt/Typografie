@@ -48,7 +48,7 @@ a {
     margin-left: 23px;
 }
 
-.titledetail {
+.titledetail1 {
     font-size: 3em;
     color: black;
     font-style: normal;
@@ -59,6 +59,62 @@ a {
     text-align: center;
     font-family: "capitolium-2", serif;
     font-style: italic;
+}
+
+.titledetail2 {
+    font-size: 3em;
+    color: black;
+    font-style: normal;
+    padding-bottom: 30px;
+    padding-top: 80px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: "capitolium-2", serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.titledetail3 {
+    font-size: 3em;
+    color: black;
+    font-style: normal;
+    padding-bottom: 30px;
+    padding-top: 80px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: "capitolium-2", serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.titledetail4 {
+    font-size: 3em;
+    color: black;
+    font-style: normal;
+    padding-bottom: 30px;
+    padding-top: 80px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: "capitolium-2", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.titledetail5 {
+    font-size: 3em;
+    color: black;
+    font-style: normal;
+    padding-bottom: 30px;
+    padding-top: 80px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: "capitolium-2", serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .fontname1 {
@@ -157,6 +213,21 @@ a {
     text-decoration: none;
 }
 
+.slide5 {
+    font-size: 3em;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 40px;
+    line-height: 10px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    transition: 3s;
+    font-family: "capitolium-2", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+}
+
 .slide1:hover {
     cursor: pointer;
     background-color: black;
@@ -179,6 +250,13 @@ a {
 }
 
 .slide4:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #F0F0F0;
+    transition: .3s;
+}
+
+.slide5:hover {
     cursor: pointer;
     background-color: black;
     color: #F0F0F0;
@@ -282,7 +360,7 @@ a {
     align-content: center;
 }
 
-.grid p {
+.detailletter1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,6 +371,62 @@ a {
     margin: 20px;
     font-weight: 400;
     font-style: italic;
+    transition: .4s;
+}
+
+.detailletter2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    color: black;
+    font-style: normal;
+    font-family: "capitolium-2", serif;
+    margin: 20px;
+    font-weight: 300;
+    font-style: normal;
+    transition: .4s;
+}
+
+.detailletter3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    color: black;
+    font-style: normal;
+    font-family: "capitolium-2", serif;
+    margin: 20px;
+    font-weight: 700;
+    font-style: italic;
+    transition: .4s;
+}
+
+.detailletter4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    color: black;
+    font-style: normal;
+    font-family: "capitolium-2", serif;
+    margin: 20px;
+    font-weight: 400;
+    font-style: normal;
+    transition: .4s;
+}
+
+.detailletter5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    color: black;
+    font-style: normal;
+    font-family: "capitolium-2", serif;
+    margin: 20px;
+    font-weight: 700;
+    font-style: normal;
     transition: .4s;
 }
 
@@ -358,10 +492,11 @@ a {
     margin-top: auto;
     margin-bottom: auto;
     font-family: "capitolium-2", serif;
-    font-style: italic;
     display: none;
-    margin-top: 20vh
+    margin-top: 20vh;
 }
+
+
 
 @media (min-width: 620px) {
     .info1 {
@@ -389,10 +524,31 @@ a {
         grid-template-rows: 1fr 1fr;
     }
 
-    .titledetail {
+    .titledetail1 {
+        font-size: 4em;
+    }
+    
+    .titledetail2 {
+        font-size: 4em;
+    }
+    
+    .titledetail3 {
+        font-size: 4em;
+    }
+    
+    .titledetail4 {
+        font-size: 4em;
+    }
+    
+    .titledetail5 {
         font-size: 4em;
     }
     .arrow {
+        left: 60px;
+        top: 50px;
+    }
+    
+    #arrow2 {
         left: 60px;
         top: 50px;
     }
@@ -402,6 +558,9 @@ a {
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    #bigletter {
+        margin-top: 0vh;
     }
 }
 
@@ -448,10 +607,23 @@ a {
 }
 
 @media (min-width: 670px) {
-    .titledetail {
+    .titledetail1 {
         padding-top: 50px;
     }
-
+    .titledetail2 {
+        padding-top: 50px;
+    }
+    
+    .titledetail3 {
+        padding-top: 50px;
+    }
+    .titledetail4 {
+        padding-top: 50px;
+    }
+    
+    .titledetail5 {
+        padding-top: 50px;
+    }
     #bigletter {
         font-size: 35em;
     }
